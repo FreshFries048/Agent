@@ -14,7 +14,7 @@ import argparse
 from typing import Dict
 
 # TODO: import email sending library (e.g., smtplib, requests to email API)
-from vault_manager import VaultManager
+from ghost.vault_manager import VaultManager
 
 class GhostOutreach:
     def __init__(self, config_path: str, db_path: str = 'leads.db'):
