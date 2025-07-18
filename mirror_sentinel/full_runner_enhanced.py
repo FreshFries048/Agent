@@ -21,7 +21,7 @@ from datetime import datetime
 from typing import List, Dict
 from bs4 import BeautifulSoup
 
-from mirror_sentinel.vault_index import save_entries
+from vault_index import save_entries
 from ghostreach.vault_manager import VaultManager
 from ghostreach.ghost_outreach import GhostOutreach
 
