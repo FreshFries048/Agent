@@ -16,17 +16,23 @@ import os
 import re
 import json
 import random
+import sys
 import requests
 from datetime import datetime
 from typing import List, Dict
 from bs4 import BeautifulSoup
 
+# Patch sys.path to allow sibling directory imports (ghostreach, etc.)
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+# Local imports from repo
 from vault_index import save_entries
 from ghostreach.vault_manager import VaultManager
 from ghostreach.ghost_outreach import GhostOutreach
 
+# Constants
 TARGETS_FILE = os.path.join(os.path.dirname(__file__), "mirror_targets.json")
-MIRROR_VAULT_PATH = os.path.join(os.path.dirname(__file__), "vault", "mirrorsentinel_vault.jsonl")
+VAULT_PATH = os.path.join(os.path.dirname(__file__), "vault", "mirrorsentinel_vault.jsonl")
 
 def load_targets() -> List[Dict]:
     with open(TARGETS_FILE, "r", encoding="utf-8") as f:
