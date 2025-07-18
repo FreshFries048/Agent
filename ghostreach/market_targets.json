@@ -1,0 +1,14 @@
+{
+  "industry": "SaaS",
+  "buyer_personas": [
+    {
+      "role": "Founder",
+      "pain_points": ["Acquiring customers", "Scaling marketing", "Automating workflows"]
+    },
+    {
+      "role": "Marketing Manager",
+      "pain_points": ["Lead generation", "Campaign ROI", "Email automation"]
+    }
+  ],
+  "template": "Hello {name},\n\nWe noticed that {company} is doing interesting work in the {industry} space. We'd love to share how our solutions can help {role}s like you solve {pain_points}.\n\nBest regards,\nGhostReach Team"
+}
