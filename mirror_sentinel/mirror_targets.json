@@ -1,0 +1,23 @@
+[
+  {
+    "label": "STYX Mirror",
+    "url": "https://mirror1.example.com",
+    "selector": ".listing",
+    "extract": {
+      "company": ".company-name",
+      "email": ".email",
+      "price": ".price",
+      "leak_type": ".category"
+    }
+  },
+  {
+    "label": "RussianMarket Clone",
+    "url": "https://mirror2.example.com",
+    "selector": ".dump",
+    "extract": {
+      "email": ".lead",
+      "leak_type": ".type",
+      "price": ".price"
+    }
+  }
+]
