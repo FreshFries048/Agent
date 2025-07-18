@@ -20,3 +20,6 @@ jobs:
           pip install requests beautifulsoup4
       - name: Run MirrorSentinel Enhanced Runner
         run: python mirror_sentinel/full_runner_enhanced.py
+
+  - name: Run Template Mutation
+    run: python mirror_sentinel/mutate_and_update_templates.py
